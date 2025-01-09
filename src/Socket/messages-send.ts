@@ -661,6 +661,8 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 		getPrivacyTokens,
 		assertSessions,
 		relayMessage,
+		createParticipantNodes,
+		getUSyncDevices,
 		sendReceipt,
 		sendReceipts,
 		getButtonArgs,
