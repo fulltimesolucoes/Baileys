@@ -115,7 +115,6 @@ export declare const makeRegistrationSocket: (config: SocketConfig) => {
         id: string;
         fromMe?: boolean | undefined;
     }[], star: boolean) => Promise<void>;
-    executeUSyncQuery: (usyncQuery: import("../WAUSync/USyncQuery").USyncQuery) => Promise<import("../WAUSync/USyncQuery").USyncQueryResult | undefined>;
     type: "md";
     ws: any;
     ev: import("../Types").BaileysEventEmitter & {
