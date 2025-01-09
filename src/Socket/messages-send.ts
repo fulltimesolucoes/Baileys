@@ -283,8 +283,7 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 		extraAttrs?: BinaryNode['attrs']
 	) => {
 		const patched = await patchMessageBeforeSending(message, jids)
-		const requiredPatched = patchMessageRequiresBeforeSending(patched, jids)
-		const bytes = encodeWAMessage(requiredPatched)
+		const bytes = encodeWAMessage(patched)
 
 		let shouldIncludeDeviceIdentity = false
 		const nodes = await Promise.all(
